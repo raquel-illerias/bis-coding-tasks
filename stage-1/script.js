@@ -1,26 +1,28 @@
-function f1() {
-	var p = new Date();
-	var q = new Date('2024-12-25');
+function getDaysRemaining1() {
+	const currentDate = new Date();
+	const targetDate = new Date('2024-12-25');
 
-	var variable = Math.round(
-		(q.setHours(0, 0, 0, 0) - p.setHours(0, 0, 0, 0)) / (1000 * 60 * 60 * 24)
+	const daysRemaining = Math.round(
+		(targetDate.setHours(0, 0, 0, 0) - currentDate.setHours(0, 0, 0, 0)) /
+			(1000 * 60 * 60 * 24)
 	);
 
-	var variable2 = document.getElementById('my-element');
-	variable2.innerText = variable;
+	const daysRemainingElement = document.getElementById('my-element');
+	daysRemainingElement.innerText = daysRemaining;
 }
 
-function f2() {
-	var p = new Date();
-	var q = new Date('2025-01-01');
+function getDaysRemaining2() {
+	const currentDate = new Date();
+	const targetDate = new Date('2025-01-01');
 
-	var variable = Math.round(
-		(q.setHours(0, 0, 0, 0) - p.setHours(0, 0, 0, 0)) / (1000 * 60 * 60 * 24)
+	const daysRemaining = Math.round(
+		(targetDate.setHours(0, 0, 0, 0) - currentDate.setHours(0, 0, 0, 0)) /
+			(1000 * 60 * 60 * 24)
 	);
 
-	var variable2 = document.getElementById('my-element2');
-	variable2.innerText = variable;
+	const daysRemainingElement = document.getElementById('my-element2');
+	daysRemainingElement.innerText = daysRemaining;
 }
 
-f1();
-f2();
+getDaysRemaining1();
+getDaysRemaining2();
