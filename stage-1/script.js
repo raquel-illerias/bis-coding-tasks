@@ -1,28 +1,19 @@
-function getDaysRemaining1() {
-	const currentDate = new Date();
-	const targetDate = new Date('2024-12-25');
+const uiDataElements = [
+	['2024-12-25', 'my-element'],
+	['2025-01-01', 'my-element2'],
+];
+
+function getDaysRemaining(date, id) {
+	const millisecondsPerDay = 1000 * 60 * 60 * 24;
 
 	const daysRemaining = Math.round(
-		(targetDate.setHours(0, 0, 0, 0) - currentDate.setHours(0, 0, 0, 0)) /
-			(1000 * 60 * 60 * 24)
+		(new Date(date).setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) /
+			millisecondsPerDay
 	);
 
-	const daysRemainingElement = document.getElementById('my-element');
-	daysRemainingElement.innerText = daysRemaining;
+	return (document.getElementById(id).innerText = daysRemaining);
 }
 
-function getDaysRemaining2() {
-	const currentDate = new Date();
-	const targetDate = new Date('2025-01-01');
-
-	const daysRemaining = Math.round(
-		(targetDate.setHours(0, 0, 0, 0) - currentDate.setHours(0, 0, 0, 0)) /
-			(1000 * 60 * 60 * 24)
-	);
-
-	const daysRemainingElement = document.getElementById('my-element2');
-	daysRemainingElement.innerText = daysRemaining;
-}
-
-getDaysRemaining1();
-getDaysRemaining2();
+uiDataElements.forEach((dataElement) => {
+	getDaysRemaining(dataElement[0], dataElement[1]);
+});
