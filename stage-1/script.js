@@ -4,19 +4,19 @@ const uiDataElements = [
 	['2024-02-14', 'my-element3'],
 ];
 
-function getDaysRemaining(date, id) {
+function calculateDaysDifference(date, id) {
 	const millisecondsPerDay = 1000 * 60 * 60 * 24;
 
-	const daysRemaining = Math.abs(
+	const daysDifference = Math.abs(
 		Math.round(
 			(new Date(date).setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) /
 				millisecondsPerDay
 		)
 	);
 
-	return (document.getElementById(id).innerText = daysRemaining);
+	return (document.getElementById(id).innerText = daysDifference);
 }
 
 uiDataElements.forEach((dataElement) => {
-	getDaysRemaining(dataElement[0], dataElement[1]);
+	calculateDaysDifference(dataElement[0], dataElement[1]);
 });
