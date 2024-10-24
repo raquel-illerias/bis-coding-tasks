@@ -1,5 +1,17 @@
 header {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $semi-transparent-background;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	border: 1px solid $semi-transparent-border;
+
 	h1 {
-		font-family: $font-delius;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $font-header;
 	}
 }
