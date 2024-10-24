@@ -128,15 +128,9 @@ main .countdown-section__container .countdown-element__container .open-accordion
   border-radius: 0 0 40px 40px;
   position: relative;
   padding-top: 80px;
-  bottom: 40px;
   z-index: 1;
   overflow: hidden;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-@media (min-width: 1024px) {
-  main .countdown-section__container .countdown-element__container .open-accordion__container {
-    bottom: 40px;
-  }
 }
 main .countdown-section__container .countdown-element__container .open-accordion__container .number-days {
   font-size: 60px;
@@ -152,7 +146,106 @@ main .countdown-section__container .countdown-element__container .open-accordion
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-height: 370px;
+  animation-name: slide_open_mobile;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@media (min-width: 1024px) {
+  main .countdown-section__container .countdown-element__container .open-accordion__container.active {
+    animation-name: slide_open_desktop;
+  }
+}
+@keyframes slide_open_mobile {
+  0% {
+    max-height: 80px;
+    top: -40px;
+  }
+  10% {
+    max-height: 109px;
+    top: -35px;
+  }
+  20% {
+    max-height: 138px;
+    top: -35px;
+  }
+  30% {
+    max-height: 167px;
+    top: -35px;
+  }
+  40% {
+    max-height: 196px;
+    top: -35px;
+  }
+  50% {
+    max-height: 225px;
+    top: -35px;
+  }
+  60% {
+    max-height: 254px;
+    top: -35px;
+  }
+  70% {
+    max-height: 283px;
+    top: -35px;
+  }
+  80% {
+    max-height: 312px;
+    top: -35px;
+  }
+  90% {
+    max-height: 341px;
+    top: -35px;
+  }
+  100% {
+    max-height: 370px;
+    top: -35px;
+  }
+}
+@keyframes slide_open_desktop {
+  0% {
+    max-height: 80px;
+    top: -255px;
+  }
+  10% {
+    max-height: 109px;
+    top: -230px;
+  }
+  20% {
+    max-height: 138px;
+    top: -199px;
+  }
+  30% {
+    max-height: 167px;
+    top: -170px;
+  }
+  40% {
+    max-height: 196px;
+    top: -140px;
+  }
+  50% {
+    max-height: 225px;
+    top: -110px;
+  }
+  60% {
+    max-height: 254px;
+    top: -80px;
+  }
+  70% {
+    max-height: 283px;
+    top: -50px;
+  }
+  80% {
+    max-height: 312px;
+    top: -40px;
+  }
+  90% {
+    max-height: 341px;
+    top: -40px;
+  }
+  100% {
+    max-height: 370px;
+    top: -40px;
+  }
 }
 footer {
   width: 100%;
