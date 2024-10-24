@@ -3,24 +3,54 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="src/css/main.css">
-		<link rel="shortcut icon" href="./src/assets/favicon/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="src/css/main.css" />
+		<link
+			rel="shortcut icon"
+			href="./src/assets/favicon/favicon.ico"
+			type="image/x-icon"
+		/>
 		<script src="script.js" defer></script>
 		<title>Countdown | Raquel Illerias</title>
 	</head>
 	<body>
-		<div>
-			<div>
-				<h3>Days until Christmas</h3>
-				<div id="my-element"></div>
+		<header>
+			<h1>Countdown</h1>
+		</header>
+		<main>
+			<div class="countdown-section__container">
+				<div class="countdown-element__container">
+					<div class="close-accordion__container">
+						<h3>Days until Christmas</h3>
+					</div>
+					<div class="open-accordion__container">
+						<h2 id="my-element"></h2>
+						<div class="open-accordion__animation"></div>
+					</div>
+				</div>
+				<div class="countdown-element__container"></div>
+					<div class="close-accordion__container">
+						<h3>Days until New Year</h3>
+					</div>
+					<div class="open-accordion__container">
+						<h2 id="my-element2"></h2>
+						<div class="open-accordion__animation"></div>
+					</div>
+				</div>
+				<div class="countdown-element__container"></div>
+					<div class="close-accordion__container">
+						<h3>Days until Valentine's Day</h3>
+					</div>
+					<div class="open-accordion__container">
+						<h2 id="my-element3"></h2>
+						<div class="open-accordion__animation"></div>
+					</div>
+				</div>
 			</div>
+		</main>
+		<footer>
 			<div>
-				<h3>Days until New Year</h3>
-				<div id="my-element2"></div>
+				<p>Raquel Illerias, 2024</p>
 			</div>
-			<div>
-				<h3>Days until Valentine's Day</h3>
-				<div id="my-element3"></div>
-			</div>
+		</footer>
 	</body>
 </html>
