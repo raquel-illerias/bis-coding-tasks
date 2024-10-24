@@ -76,14 +76,15 @@ main .countdown-section__container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 0;
+    padding: 0 0 80px;
     margin: 20px 0;
+    height: 400px;
   }
 }
 main .countdown-section__container .countdown-element__container {
   width: 300px;
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -93,7 +94,7 @@ main .countdown-section__container .countdown-element__container {
 @media (min-width: 1024px) {
   main .countdown-section__container .countdown-element__container {
     align-self: flex-start;
-    min-height: 500px;
+    min-height: 370px;
   }
 }
 main .countdown-section__container .countdown-element__container .close-accordion__container {
@@ -131,7 +132,7 @@ main .countdown-section__container .countdown-element__container .open-accordion
 }
 @media (min-width: 1024px) {
   main .countdown-section__container .countdown-element__container .open-accordion__container {
-    bottom: 95px;
+    bottom: 40px;
   }
 }
 main .countdown-section__container .countdown-element__container .open-accordion__container .number-days {
