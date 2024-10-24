@@ -1,6 +1,8 @@
-const toggleAccordion = document.getElementById('toggleAccordion');
-const openedAccordion = document.getElementById('openedAccordion');
+const toggleAccordions = document.querySelectorAll('.toggleAccordion');
 
-toggleAccordion.addEventListener('click', () => {
-	openedAccordion.classList.toggle('active');
+toggleAccordions.forEach((toggleAccordion) => {
+	toggleAccordion.addEventListener('click', function () {
+		const openedAccordion = this.nextElementSibling;
+		openedAccordion.classList.toggle('active');
+	});
 });
