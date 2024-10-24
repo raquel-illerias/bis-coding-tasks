@@ -9,8 +9,10 @@
 			href="./src/assets/favicon/favicon.ico"
 			type="image/x-icon"
 		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 		<script src="./js/script.js" defer></script>
 		<script src="./js/toggleAccordion.js" defer></script>
+		<script src="./js/animation.js" defer></script>
 		<title>Countdown | Raquel Illerias</title>
 	</head>
 	<body>
@@ -23,27 +25,37 @@
 					<div class="toggleAccordion close-accordion__container">
 						<h3>Days until Christmas</h3>
 					</div>
-					<div class="open-accordion__container">
+					<div class="openedAccordion open-accordion__container">
 						<h2 id="my-element"></h2>
-						<div class="open-accordion__animation"></div>
+						<div
+							id="christmas-tree__animation"
+							class="open-accordion__animation"
+						></div>
 					</div>
 				</div>
 				<div class="countdown-element__container">
 					<div class="toggleAccordion close-accordion__container">
 						<h3>Days until New Year</h3>
 					</div>
-					<div class="open-accordion__container">
+					<div class="openedAccordion open-accordion__container">
 						<h2 id="my-element2"></h2>
-						<div class="open-accordion__animation"></div>
+						<div
+							id="serpentine-cone__animation"
+							class="open-accordion__animation"
+						></div>
 					</div>
 				</div>
 				<div class="countdown-element__container">
 					<div class="toggleAccordion close-accordion__container">
 						<h3>Days until Valentine's Day</h3>
 					</div>
-					<div class="open-accordion__container">
+					<div class="openedAccordion open-accordion__container">
 						<h2 id="my-element3"></h2>
-						<div class="open-accordion__animation"></div>
+						<div
+							id="hearts__animation"
+							class="open-accordion__animation"
+							style="width: 180px; height: 180px"
+						></div>
 					</div>
 				</div>
 			</div>
