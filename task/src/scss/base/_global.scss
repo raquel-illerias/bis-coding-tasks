@@ -34,6 +34,9 @@ html {
 body {
 	width: 100%;
 	min-height: 100vh;
+	font-family: $font-roboto;
+	font-weight: $font-regular;
+	font-size: $font-size-base;
 	background: linear-gradient(
 		277deg,
 		$gradient-one,
