@@ -1,0 +1,74 @@
+main {
+	.countdown-section__container {
+		width: 100%;
+		margin: 30px 0 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.countdown-element__container {
+			width: 300px;
+			height: 450px;
+			margin-bottom: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			.close-accordion__container {
+				width: 300px;
+				height: 80px;
+				background-color: $primary-background;
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				border-radius: 40px;
+				cursor: pointer;
+				position: absolute;
+			}
+
+			.accordion-arrow__image {
+				width: 30px;
+				height: 30px;
+			}
+
+			.open-accordion__container {
+				width: 300px;
+				height: 370px;
+				text-align: center;
+				display: none;
+				transition: all 0.3s ease-in-out;
+				background-color: $primary-background;
+				position: relative;
+				top: 40px;
+				z-index: -1;
+				padding-top: 80px;
+
+				.number-days {
+					font-size: $font-size-extra-large;
+					font-weight: $font-bold;
+				}
+
+				.open-accordion__animation {
+					margin-top: 20px;
+					width: 200px;
+					height: 200px;
+				}
+			}
+
+			.open-accordion__container.active {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+
+	@include respond-to(tablet) {
+	}
+
+	@include respond-to(desktop) {
+	}
+}

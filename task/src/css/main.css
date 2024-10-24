@@ -55,31 +55,64 @@ header h1 {
   font-family: "Faster One", system-ui;
 }
 
-.countdown-element__container {
-  width: 200px;
-  height: 260px;
-  margin-bottom: 20px;
+main .countdown-section__container {
+  width: 100%;
+  margin: 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .countdown-section__container .countdown-element__container {
+  width: 300px;
+  height: 450px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.countdown-element__container .close-accordion__container {
-  width: 100%;
-  height: 60px;
-  background-color: lightblue;
+main .countdown-section__container .countdown-element__container .close-accordion__container {
+  width: 300px;
+  height: 80px;
+  background-color: #faf5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 40px;
   cursor: pointer;
+  position: absolute;
 }
-.countdown-element__container .open-accordion__container {
-  width: 100%;
-  height: 200px;
+main .countdown-section__container .countdown-element__container .accordion-arrow__image {
+  width: 30px;
+  height: 30px;
+}
+main .countdown-section__container .countdown-element__container .open-accordion__container {
+  width: 300px;
+  height: 370px;
   text-align: center;
   display: none;
   transition: all 0.3s ease-in-out;
-  background-color: blanchedalmond;
+  background-color: #faf5f9;
+  position: relative;
+  top: 40px;
+  z-index: -1;
+  padding-top: 80px;
 }
-.countdown-element__container .open-accordion__container.active {
-  display: block;
+main .countdown-section__container .countdown-element__container .open-accordion__container .number-days {
+  font-size: 60px;
+  font-weight: 900;
+}
+main .countdown-section__container .countdown-element__container .open-accordion__container .open-accordion__animation {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+}
+main .countdown-section__container .countdown-element__container .open-accordion__container.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 footer {
   width: 100%;
