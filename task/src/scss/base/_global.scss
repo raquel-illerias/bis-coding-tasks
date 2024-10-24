@@ -34,6 +34,10 @@ html {
 body {
 	width: 100%;
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	font-family: $font-roboto;
 	font-weight: $font-regular;
 	font-size: $font-size-base;
@@ -48,6 +52,5 @@ body {
 		$gradient-seven
 	);
 	background-size: 1400% 1400%;
-
 	animation: backgroundGradientAnimation 11s ease infinite;
 }
