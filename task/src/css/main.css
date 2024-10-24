@@ -115,6 +115,9 @@ main .countdown-section__container .countdown-element__container .close-accordio
   height: 30px;
   transition: transform 0.3s ease;
 }
+main .countdown-section__container .countdown-element__container .close-accordion__container .accordion-arrow__image.active {
+  transform: rotate(180deg);
+}
 main .countdown-section__container .countdown-element__container .open-accordion__container {
   width: 300px;
   height: auto;

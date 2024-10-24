@@ -51,6 +51,10 @@ main {
 					height: 30px;
 					transition: transform 0.3s ease;
 				}
+
+				.accordion-arrow__image.active {
+					transform: rotate(180deg);
+				}
 			}
 
 			.open-accordion__container {
