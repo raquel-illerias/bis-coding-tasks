@@ -6,6 +6,15 @@ $secondary-background: #d6b3ea;
 $primary-dropdown-background: #f7f0f6;
 $primary-text: #333;
 
+// Gradient colours
+$gradient-one: #f4d3f4;
+$gradient-two: #cbc4ef;
+$gradient-three: #9bbce9;
+$gradient-four: #9fccda;
+$gradient-five: #bcd2d6;
+$gradient-six: #97bcbc;
+$gradient-seven: #c7e5e4;
+
 // Fonts
 $font-delius: 'Delius Swash Caps', cursive;
 $font-roboto: 'Roboto', sans-serif;
@@ -22,3 +31,7 @@ $font-size-small: 12px;
 $font-size-base: 16px;
 $font-size-large: 24px;
 $font-size-extra-large: 60px;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

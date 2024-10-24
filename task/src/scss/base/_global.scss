@@ -1,3 +1,17 @@
+// Background gradient keyframes
+
+@keyframes backgroundGradientAnimation {
+	0% {
+		background-position: 0% 62%;
+	}
+	50% {
+		background-position: 100% 39%;
+	}
+	100% {
+		background-position: 0% 62%;
+	}
+}
+
 // Global reset
 
 *,
@@ -20,4 +34,17 @@ html {
 body {
 	width: 100%;
 	min-height: 100vh;
+	background: linear-gradient(
+		277deg,
+		$gradient-one,
+		$gradient-two,
+		$gradient-three,
+		$gradient-four,
+		$gradient-five,
+		$gradient-six,
+		$gradient-seven
+	);
+	background-size: 1400% 1400%;
+
+	animation: backgroundGradientAnimation 11s ease infinite;
 }
