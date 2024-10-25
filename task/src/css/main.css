@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Faster+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Faster+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @keyframes backgroundGradientAnimation {
   0% {
     background-position: 0% 62%;
@@ -53,13 +52,22 @@ header {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.38);
-  opacity: 0;
-  visibility: hidden;
+  animation-name: show_header;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
 }
 header h1 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Faster One", system-ui;
+}
+@keyframes show_header {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 main {
@@ -93,8 +101,19 @@ main .countdown-section__container .countdown-element__container {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  animation-name: show_countdown;
   opacity: 0;
-  visibility: hidden;
+  animation-delay: 500ms;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+}
+@keyframes show_countdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (min-width: 1024px) {
   main .countdown-section__container .countdown-element__container {
@@ -260,8 +279,19 @@ footer {
   justify-content: center;
   background-color: #faf5f9;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  animation-name: show_footer;
   opacity: 0;
-  visibility: hidden;
+  animation-delay: 1s;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+}
+@keyframes show_footer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

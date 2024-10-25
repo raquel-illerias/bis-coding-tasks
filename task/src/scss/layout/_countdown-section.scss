@@ -29,8 +29,20 @@ main {
 			justify-content: space-between;
 			align-items: center;
 			position: relative;
+			animation-name: show_countdown;
 			opacity: 0;
-			visibility: hidden;
+			animation-delay: 500ms;
+			animation-duration: 2000ms;
+			animation-fill-mode: forwards;
+
+			@keyframes show_countdown {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
 
 			@include mixin.respond-to(desktop) {
 				align-self: flex-start;

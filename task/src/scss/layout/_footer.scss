@@ -8,6 +8,18 @@ footer {
 	justify-content: center;
 	background-color: vars.$primary-background;
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	animation-name: show_footer;
 	opacity: 0;
-	visibility: hidden;
+	animation-delay: 1s;
+	animation-duration: 2000ms;
+	animation-fill-mode: forwards;
+
+	@keyframes show_footer {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
 }
