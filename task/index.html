@@ -3,23 +3,76 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<script src="script.js" defer></script>
-		<title>Raquel Illerias | Stage 1</title>
+		<link rel="stylesheet" href="src/css/main.css" />
+		<link
+			rel="shortcut icon"
+			href="./src/assets/favicon/favicon.ico"
+			type="image/x-icon"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+		<script src="./js/countdown.js" defer></script>
+		<script src="./js/toggleAccordion.js" defer></script>
+		<script src="./js/lottieAnimation.js" defer></script>
+		<title>Countdown | Raquel Illerias</title>
 	</head>
 	<body>
-		<div>
-			<div>
-				<h3>Days until Christmas</h3>
-				<div id="my-element"></div>
+		<header>
+			<h1>Countdown</h1>
+		</header>
+		<main>
+			<div class="countdown-section__container">
+				<div class="countdown-element__container">
+					<div class="toggleAccordion close-accordion__container">
+						<h3>Days until Christmas</h3>
+						<img
+							class="accordion-arrow__image"
+							src="./src/assets/images/icons/arrow-drop-down.png"
+							alt="This is a dropdown arrow indicating expandable content."
+						/>
+					</div>
+					<div class="openedAccordion open-accordion__container">
+						<h2 id="my-element" class="number-days"></h2>
+						<div
+							id="christmas-tree__animation"
+							class="open-accordion__animation"
+						></div>
+					</div>
+				</div>
+				<div class="countdown-element__container">
+					<div class="toggleAccordion close-accordion__container">
+						<h3>Days until New Year</h3>
+						<img
+							class="accordion-arrow__image"
+							src="./src/assets/images/icons/arrow-drop-down.png"
+							alt="This is a dropdown arrow indicating expandable content."
+						/>
+					</div>
+					<div class="openedAccordion open-accordion__container">
+						<h2 id="my-element2" class="number-days"></h2>
+						<div
+							id="serpentine-cone__animation"
+							class="open-accordion__animation"
+						></div>
+					</div>
+				</div>
+				<div class="countdown-element__container">
+					<div class="toggleAccordion close-accordion__container">
+						<h3>Days until Valentine's Day</h3>
+						<img
+							class="accordion-arrow__image"
+							src="./src/assets/images/icons/arrow-drop-down.png"
+							alt="This is a dropdown arrow indicating expandable content."
+						/>
+					</div>
+					<div class="openedAccordion open-accordion__container">
+						<h2 id="my-element3" class="number-days"></h2>
+						<div id="hearts__animation" class="open-accordion__animation"></div>
+					</div>
+				</div>
 			</div>
-			<div>
-				<h3>Days until New Year</h3>
-				<div id="my-element2"></div>
-			</div>
-			<div>
-				<h3>Days until Valentine's Day</h3>
-				<div id="my-element3"></div>
-			</div>
+		</main>
+		<footer>
+			<p>Raquel Illerias</p>
+		</footer>
 	</body>
 </html>
