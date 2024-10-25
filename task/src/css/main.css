@@ -52,6 +52,8 @@ header {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.38);
+  opacity: 0;
+  visibility: hidden;
 }
 header h1 {
   text-align: center;
@@ -90,6 +92,8 @@ main .countdown-section__container .countdown-element__container {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  opacity: 0;
+  visibility: hidden;
 }
 @media (min-width: 1024px) {
   main .countdown-section__container .countdown-element__container {
@@ -255,6 +259,8 @@ footer {
   justify-content: center;
   background-color: #faf5f9;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

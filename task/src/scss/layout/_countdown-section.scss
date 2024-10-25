@@ -27,6 +27,8 @@ main {
 			justify-content: space-between;
 			align-items: center;
 			position: relative;
+			opacity: 0;
+			visibility: hidden;
 
 			@include respond-to(desktop) {
 				align-self: flex-start;
