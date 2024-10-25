@@ -1,3 +1,5 @@
+@use './variables' as vars;
+
 // Background gradient keyframes
 
 @keyframes backgroundGradientAnimation {
@@ -38,18 +40,18 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	font-family: $font-roboto;
-	font-weight: $font-regular;
-	font-size: $font-size-base;
+	font-family: vars.$font-roboto;
+	font-weight: vars.$font-regular;
+	font-size: vars.$font-size-base;
 	background: linear-gradient(
 		277deg,
-		$gradient-one,
-		$gradient-two,
-		$gradient-three,
-		$gradient-four,
-		$gradient-five,
-		$gradient-six,
-		$gradient-seven
+		vars.$gradient-one,
+		vars.$gradient-two,
+		vars.$gradient-three,
+		vars.$gradient-four,
+		vars.$gradient-five,
+		vars.$gradient-six,
+		vars.$gradient-seven
 	);
 	background-size: 1400% 1400%;
 	animation: backgroundGradientAnimation 11s ease infinite;

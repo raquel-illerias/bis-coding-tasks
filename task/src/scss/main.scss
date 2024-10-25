@@ -1,9 +1,7 @@
 // Base styles
-@import './base/variables';
-@import './base/mixins';
-@import './base/global';
+@use './base/global';
 
 // Layout styles
-@import 'layout/header';
-@import 'layout/countdown-section';
-@import 'layout/footer';
+@use 'layout/header';
+@use 'layout/countdown-section';
+@use 'layout/footer';
