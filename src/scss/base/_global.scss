@@ -1,0 +1,58 @@
+@use './variables' as vars;
+
+// Background gradient keyframes
+
+@keyframes backgroundGradientAnimation {
+	0% {
+		background-position: 0% 62%;
+	}
+	50% {
+		background-position: 100% 39%;
+	}
+	100% {
+		background-position: 0% 62%;
+	}
+}
+
+// Global reset
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	appearance: none;
+	border: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-family: vars.$font-roboto;
+	font-weight: vars.$font-regular;
+	font-size: vars.$font-size-base;
+	background: linear-gradient(
+		277deg,
+		vars.$gradient-one,
+		vars.$gradient-two,
+		vars.$gradient-three,
+		vars.$gradient-four,
+		vars.$gradient-five,
+		vars.$gradient-six,
+		vars.$gradient-seven
+	);
+	background-size: 1400% 1400%;
+	animation: backgroundGradientAnimation 11s ease infinite;
+}
